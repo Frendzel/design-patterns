@@ -26,6 +26,10 @@ public abstract class Car implements Driveable, Cloneable {
         return productionYear;
     }
 
+
+    //TODO note that using .clone is not the best way to copy objects in Java
+    //TODO we should think about just copying all existing values to the new object
+    //TODO and use simply new keyword.
     public Object clone() {
         try {
             return super.clone();

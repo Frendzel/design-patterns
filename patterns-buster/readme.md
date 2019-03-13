@@ -64,6 +64,12 @@ The main object of this workshops is to reach a DoD for every pattern implementa
 * https://www.agilealliance.org/glossary/definition-of-done/
 
 *KNOWLEDGE BASE*
-* groovy
-* spock
-* lombok
+
+* Flyweight vs Prototype
+
+In Flyweight, object is immutable.
+In Prototype, object is mutable.
+
+Flyweight is about saving memory by not creating new objects and reusing existing ones when possible.
+Prototype is about, reusing existing object in order to save cost of new object creation.
+
