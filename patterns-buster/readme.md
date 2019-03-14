@@ -34,16 +34,16 @@ remove the @PendingFeature annotation from existing test.
 *Behavioral Design Patterns*
 
 * Template Method
-* Mediator
-* Chain of Responsibility
-* Observer
 * Strategy
-* Command
+* Observer
 * State
 * Visitor
-* Interpreter
 * Iterator
 * Memento
+* Chain of Responsibility
+* Command
+* Mediator
+* Interpreter
 
 *TASKS*
 
@@ -73,3 +73,7 @@ In Prototype, object is mutable.
 Flyweight is about saving memory by not creating new objects and reusing existing ones when possible.
 Prototype is about, reusing existing object in order to save cost of new object creation.
 
+* Command vs Memento
+
+Command -> object represents an action
+Memento -> object represents a state
