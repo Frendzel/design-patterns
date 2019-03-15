@@ -3,8 +3,7 @@ package pl.sda.patterns.behavioral.iterator;
 import java.util.ArrayList;
 import java.util.List;
 
-//TODO please take a look here:
-//TODO https://sourcemaking.com/design_patterns/iterator/java/1
+// TODO implement iterator here to avoid calling wrong methods on the list
 class IntegerBox {
     private final List<Integer> list = new ArrayList<>();
 

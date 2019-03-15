@@ -1,6 +1,5 @@
 package pl.sda.patterns.structural.flyweight;
 
-//TODO think about
 public class CarManufacture {
 
 

@@ -12,7 +12,6 @@ public class StaticBlockSingleton {
     static {
         try {
             PropertyLoader instance = new PropertyLoader();
-            instance.init();
         } catch (Exception e) {
             throw new RuntimeException("Exception occurred in creating singleton instance");
         }

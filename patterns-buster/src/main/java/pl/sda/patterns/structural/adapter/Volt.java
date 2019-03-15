@@ -6,8 +6,6 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 class Volt {
-
     private int volts;
-
 
 }

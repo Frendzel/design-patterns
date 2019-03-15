@@ -1,8 +1,10 @@
 package pl.sda.patterns.creational.singleton
 
+import spock.lang.PendingFeature
 import spock.lang.Specification
 
 class ThreadSafeSingletonTest extends Specification {
+    @PendingFeature
     def "Should return singleton instance of PropertyLoader class"() {
 
         when:

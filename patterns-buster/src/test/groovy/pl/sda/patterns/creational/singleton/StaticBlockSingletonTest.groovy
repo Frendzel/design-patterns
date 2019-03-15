@@ -9,8 +9,8 @@ class StaticBlockSingletonTest extends Specification {
     def "Should return singleton instance of PropertyLoader class"() {
 
         when:
-        def instance = LazyInitializedSingleton.getInstance()
-        def instance2 = LazyInitializedSingleton.getInstance()
+        def instance = StaticBlockSingleton.getInstance()
+        def instance2 = StaticBlockSingleton.getInstance()
 
         then:
         instance.getDb() == 'test'
