@@ -1,7 +1,8 @@
 package pl.sda.patterns.behavioral.strategy;
 
-import com.sun.tools.javac.util.List;
 import org.junit.jupiter.api.Test;
+
+import java.util.List;
 
 import static com.sun.tools.javac.util.List.of;
 import static java.math.BigDecimal.*;
