@@ -5,13 +5,13 @@ import spock.lang.Specification
 class SaySthTest extends Specification {
     def "test justSayIt"() {
         given:
-        SaySth say = new SaySth()
+            SaySth say = new SaySth()
         expect:
-        word == say.justSayIt(o)
+            word == say.justSayIt(o)
         where:
-        word   | o
-        "hi!"  | new SayHi()
-        "no!"  | new SayNo()
-        "yes!" | new SayYes()
+            word   | o
+            "hi!"  | new SayHi()
+            "no!"  | new SayNo()
+            "yes!" | new SayYes()
     }
 }
