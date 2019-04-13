@@ -5,7 +5,11 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-class Volt {
+class Volt implements Cloneable {
     private int volts;
+
+    public Volt copy() {
+        return this.copy();
+    }
 
 }

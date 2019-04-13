@@ -32,4 +32,39 @@ public class Student {
         this.birthDayOfWeek = birthDayOfWeek;
         this.scholarship = scholarship;
     }
+
+    public Student() {
+    }
+
+    public static class StudentBuilder {
+
+        //Required Parameters
+        private String firstName;
+        private String lastName;
+        private String pesel;
+        private Year birthYear;
+
+        //Optional Parameters
+        private Month birthMonth;
+        private DayOfWeek birthDayOfWeek;
+        private Boolean scholarship;
+
+        public StudentBuilder lastName(String lastName) {
+            this.lastName = lastName;
+            return this;
+        }
+
+        public StudentBuilder firstName(String firstName) {
+            this.firstName = firstName;
+            return this;
+        }
+
+        public Student build() {
+            return new Student(firstName, lastName, pesel, birthYear, birthMonth, birthDayOfWeek, scholarship);
+        }
+    }
+
+    public static StudentBuilder builder() {
+        return new StudentBuilder();
+    }
 }

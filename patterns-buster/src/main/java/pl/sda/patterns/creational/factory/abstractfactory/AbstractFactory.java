@@ -7,4 +7,6 @@ package pl.sda.patterns.creational.factory.abstractfactory;
 //TODO 5. Please try to use external libraries here
 //TODO 6. Moreover we need to return value through interface (use generic to return csv/pdf/json)
 public interface AbstractFactory<T> {
+
+    T create(T item);
 }

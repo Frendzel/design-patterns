@@ -8,7 +8,9 @@ public class LazyInitializedSingleton {
     }
 
     public static PropertyLoader getInstance() {
-        instance = new PropertyLoader();
+        if (instance == null) {
+            instance = new PropertyLoader();
+        }
         return instance;
     }
 }

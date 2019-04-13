@@ -1,30 +1,21 @@
 package pl.sda.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.time.Year;
 
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public abstract class Car implements Driveable, Cloneable {
 
     private int door;
     private String color;
     private Year productionYear;
-
-    public Car(int door, String color, Year productionYear) {
-        this.door = door;
-        this.color = color;
-        this.productionYear = productionYear;
-    }
-
-    public int getDoor() {
-        return door;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public Year getProductionYear() {
-        return productionYear;
-    }
 
 
     //TODO note that using .clone is not the best way to copy objects in Java
@@ -38,4 +29,9 @@ public abstract class Car implements Driveable, Cloneable {
         }
         return null;
     }
+//    public Car cloneCar(Car car){
+//        Car car1 = new Car();
+//        car1.setColor(this.getColor());
+//        return car1;
+//    }
 }
