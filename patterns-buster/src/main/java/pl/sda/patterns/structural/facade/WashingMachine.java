@@ -7,7 +7,9 @@ public class WashingMachine {
     }
 
     public void setTemperature(int degrees) {
-
+        if (degrees > 100) {
+            throw new RuntimeException("It will burn!");
+        }
     }
 
     public void chooseProgram() {

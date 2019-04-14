@@ -2,11 +2,15 @@ package pl.sda.patterns.structural.facade;
 
 public class DryingRack {
 
-    public void hangLaundry() {
+    private boolean isEmpty;
 
+    public void hangLaundry() {
+        if (!isEmpty) {
+            throw new RuntimeException("Please remove old laundry!");
+        }
     }
 
     public void removeOldLaundry() {
-
+        isEmpty = true;
     }
 }
