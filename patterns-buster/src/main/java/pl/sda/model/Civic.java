@@ -1,10 +1,7 @@
 package pl.sda.model;
 
-import lombok.Builder;
-
 import java.time.Year;
 
-@Builder
 public class Civic extends Car {
     public Civic() {
     }

@@ -115,7 +115,7 @@ The main object of this workshops is to reach a DoD for every pattern implementa
 
 * Decorator
 13. Fill the implementation and fix the bugs
-14. Think about another example with burger order. You can order burger with extra chees, extra ham, without ham.
+14. Think about another example with burger order. You can order burger with extra cheese, extra ham, without ham.
 Your abstract class should have at least 2 methods (description of burger, additional costs)
 Try to test the whole flow (order extra burger and calculate the price)
 
