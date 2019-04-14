@@ -32,16 +32,24 @@ public class SocketClassAdapterImplTest {
     @Test
     public void get12Volt() {
         //when
-        Volt volt
+        Volt volt = sut.get12Volt();
         //then
+        assertEquals(volt.getVolts(),12);
+        assertEquals(volt, new Volt (12));
+        assertThat (volt, equalTo(new Volt(12)));
+
 
     }
 
     @Test
     public void get3Volt() {
         //when
+        Volt volt = sut.get3Volt();
 
         //then
+        assertEquals(volt.getVolts(),3);
+        assertEquals(volt, new Volt(3));
+        assertThat(volt, equalTo(new Volt(3)));
 
     }
 }
